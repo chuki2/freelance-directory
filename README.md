@@ -28,8 +28,8 @@ The Freelancer Directory API is built on .NET Core 8.0.301 and uses LocalDB (SQL
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/your-repo/freelancer-directory-api.git
-    cd freelancer-directory-api
+    git clone https://github.com/chuki2/freelance-directory
+    cd freelancer-directory
     ```
 
 2. **Set up the Database**
