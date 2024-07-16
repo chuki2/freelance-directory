@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ApplicationUser\Commands\Create\**" />
+    <Compile Remove="ApplicationUser\Commands\Delete\**" />
+    <Compile Remove="ApplicationUser\Commands\Update\**" />
+    <EmbeddedResource Remove="ApplicationUser\Commands\Create\**" />
+    <EmbeddedResource Remove="ApplicationUser\Commands\Delete\**" />
+    <EmbeddedResource Remove="ApplicationUser\Commands\Update\**" />
+    <None Remove="ApplicationUser\Commands\Create\**" />
+    <None Remove="ApplicationUser\Commands\Delete\**" />
+    <None Remove="ApplicationUser\Commands\Update\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.9.2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.2" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="8.0.7" />
+    <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="7.6.3" />
+    <PackageReference Include="SendGrid" Version="9.29.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.3" />
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FreelancerDirectoryAPI.Domain\FreelancerDirectoryAPI.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ExternalServices\" />
+  </ItemGroup>
+
+</Project>
